@@ -1,0 +1,35 @@
+{
+  "name": "financegpt-nosana-agent",
+  "version": "1.0.0",
+  "description": "Advanced Personal Financial Assistant for DeFi and Traditional Investing built with ElizaOS and deployed on Nosana",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "elizaos start --character ./characters/financegpt.character.json",
+    "dev": "elizaos dev --character ./characters/financegpt.character.json",
+    "build": "tsc",
+    "frontend": "cd frontend && npm start"
+  },
+  "keywords": ["defi", "fintech", "ai", "elizaos", "nosana", "portfolio", "crypto"],
+  "dependencies": {
+    "@elizaos/core": "^1.0.0",
+    "@elizaos/plugin-bootstrap": "^1.0.0",
+    "@elizaos/plugin-openai": "^1.0.0",
+    "@elizaos/plugin-web-search": "^1.0.0",
+    "@elizaos/plugin-browser": "^1.0.0",
+    "@elizaos/plugin-telegram": "^1.0.0",
+    "axios": "^1.6.0",
+    "ethers": "^6.8.0",
+    "ws": "^8.14.0",
+    "node-cron": "^3.0.2"
+  },
+  "devDependencies": {
+    "@elizaos/cli": "^1.0.0",
+    "@types/node": "^20.0.0",
+    "@types/ws": "^8.5.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
